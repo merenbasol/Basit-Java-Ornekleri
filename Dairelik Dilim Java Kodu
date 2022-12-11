@@ -1,0 +1,28 @@
+2- Dairelik Dilim
+
+import java.util.Scanner;
+
+public class DaireClass 
+{
+	
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		
+		double pi = 3.14;
+		
+		System.out.println("Dairelik dilliminizin yarıçapını giriniz :");
+		double r = input.nextDouble();
+		
+		System.out.println("Dairelik dilliminizin açısını giriniz :");
+		double aci = input.nextDouble();
+		
+		
+		double alan = (pi*r*r)*(aci/360);
+		double cevre = (2*pi*r)*(aci/360);
+		
+		System.out.println("Dairelik diliminizin çevresi : " + cevre );
+		System.out.println("Dairelik diliminizin alanı : " + alan );	
+	}
+	
+}
