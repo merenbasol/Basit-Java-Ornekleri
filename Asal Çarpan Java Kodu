@@ -1,0 +1,37 @@
+7- Girilen sayıyı asal çarpanlarına ayıran uygulama 
+
+import java.util.Scanner;
+
+public class CarpanClass
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Asal çarpanlarına ayrımak istediğiniz sayıyı giriniz");
+		int x = input.nextInt();
+		
+		for (int i = 2; i < x+1 ; i++) 
+		{
+			int kuvvet = 0;
+			
+			if(x % i == 0) 
+			{
+				while (true) 
+				{
+					x = x/i;
+					kuvvet += 1 ;
+					
+					if(x % i != 0 ) 
+					{
+						System.out.println(i + "^" + kuvvet);
+						break;
+					}
+				}
+			}
+		}
+	}
+
+}
