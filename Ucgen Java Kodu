@@ -1,0 +1,61 @@
+10- Kenarları girilen üçgenin alanını ve çevresini veren uygulama
+
+import java.util.Scanner;
+
+public class UcgenClass 
+{
+
+	public static void main(String[] args) 
+  {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Bu uygulama, 3 kenar değeri de girilen bir üçgenin ; \nmevcud olup olmadığını, mevcud ise çevresini, mevcud ise alanını göstermektedir.");
+		
+		System.out.println("Lütfen hesaplamak istediğiniz üçgenin kenarlarını ayrı ayrı giriniz");
+		
+		double a = input.nextDouble();
+		double b = input.nextDouble();
+		double c = input.nextDouble();
+		
+		double cevre = a + b+ c;
+		double u = cevre/2;
+		double alan = Math.sqrt(u*(u-a)*(u-b)*(u-c));
+		
+		double maxkenar = 3;
+		double digertoplam = 3;
+		
+		if (a>=b && a>=c) 
+		{
+			maxkenar = a;
+			digertoplam = b + c ;
+		}
+		else if (a>=b && a>=c) 
+		{
+			maxkenar = a;
+			digertoplam = b + c ;
+		}
+		else if (a>=b && a>=c) 
+		{
+			maxkenar = a;
+			digertoplam = b + c ;
+		}
+	
+		boolean mumkunluk = false;
+		
+		if (maxkenar < digertoplam) 
+		{
+			mumkunluk = true;
+		}
+		
+		if (mumkunluk) 
+		{
+			System.out.println("Üçgeninizin çevresi : " + cevre + " üçgeninizin alanı : " + alan);
+		}
+		else
+    {
+    System.out.println("Girdiğiniz değerlere sahip bir üçgen olamaz");
+    }
+	}
+
+}
