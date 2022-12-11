@@ -1,0 +1,25 @@
+9- Vize final ortalama
+
+import java.util.Scanner;
+
+public class OrtalamaClass 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Lütfen vize ve final notunuzu sırasıyla giriniz ");
+		
+		double vizenot = input.nextDouble();
+		double finalnot = input.nextDouble();
+
+		
+		double ortalama = vizenot*(0.4) + finalnot*(0.6);
+		
+		System.out.println("Ortalamanız : "  + ortalama);
+	}
+
+}
