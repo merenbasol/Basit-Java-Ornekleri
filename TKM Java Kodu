@@ -1,0 +1,105 @@
+6- Taş - Kağıt - Makas Oyunu
+
+
+import java.util.Scanner;
+
+public class TkmClass
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		
+		int secimpc = (int)(Math.random()*3);
+		
+		System.out.println("Taş için 0 ı , Kağıt için 1 i , Makas için 2 yi giriniz");
+		int secimk = input.nextInt();
+		
+		while(true) 
+		{
+			if (secimk <= 2 && secimk >= 0) 
+			{
+				break;
+			}
+			else 
+			{
+				System.out.println("Lütfen tekrar seçim yapınız");
+				secimk = input.nextInt();
+			}
+		}
+		
+		
+		switch (secimpc) 
+		{
+			case 0: 
+			{
+				switch (secimk) 
+				{
+					case 0: 
+					{
+						System.out.println("Berabere kaldınız ");
+						break;
+					}
+					case 1: 
+					{
+						System.out.println("Kazandınız");
+						break;
+					}
+					case 2: 
+					{
+						System.out.println("Kaybettiniz");
+						break;
+					}
+					
+				}
+			break;	
+			}
+			case 1: 
+			{
+				switch (secimk) 
+				{
+					case 0: 
+					{
+						System.out.println("Kaybettiniz");
+						break;
+					}
+					case 1: 
+					{
+						System.out.println("Berabere kaldınız ");
+						break;
+					}
+					case 2: 
+					{
+						System.out.println("Kazandınız");
+						break;
+					}
+				}
+			break;
+			}
+			case 2: 
+			{
+				switch (secimk) 
+				{
+					case 0: 
+					{
+						System.out.println("Kazandınız");
+						break;
+					}
+					case 1: 
+					{
+						System.out.println("Kaybettiniz");
+						break;
+					}
+					case 2: 
+					{
+						System.out.println("Berabere kaldınız ");
+						break;
+					}
+					
+				}
+			break;
+			}	
+		}
+	}
+
+}
