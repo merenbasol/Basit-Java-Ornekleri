@@ -1,0 +1,47 @@
+8- BKİ hesaplayıp rapor veren uygulama
+
+import java.util.Scanner;
+
+public class BkiClass 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Lütfen önce cinsiyetinizi erkek (0) kadın(1) sonra kütlenizi kilogram olarak, sonrasında boyunuzu metre olarak sırasıyla giriniz");
+		int cinsiyet = input.nextInt();		
+		double kutle = input.nextDouble();
+		double boy = input.nextDouble();
+		
+		double bki = kutle/(boy*boy);
+		
+		if (cinsiyet == 0) 
+		{
+			if (bki >= 25.0) 
+			{
+				System.out.println("Kilolosunuz");
+			}
+			else 
+			{
+				System.out.println("Kilolu değilsiniz");
+			}
+		}
+		else if (cinsiyet == 1) 
+		{
+			if (bki >= 23) 
+			{
+				System.out.println("Kilolosunuz");
+			}
+			else 
+			{
+				System.out.println("Kilolu değilsiniz");
+			}
+		}
+		else 
+		{
+			System.out.println("Cinsiyetinizi yanlış girdiniz");
+		}
+	}
+
+}
