@@ -1,0 +1,37 @@
+5 - Sayı Tahmin Etme Oyunu
+
+import java.util.Scanner;
+
+public class TahminClass 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		
+		int sayipc = (int) (Math.random()*100);
+		
+		int sayik = 0; 
+		
+		while(true) 
+		{
+			System.out.println("Lütfen 0 ila 100 arasında bir sayı giriniz");
+			sayik = input.nextInt();
+			
+			if(sayipc == sayik) 
+			{
+				System.out.println("Kazandınız");
+				break;
+			}
+			else if (sayipc > sayik) 
+			{
+				System.out.println("Daha büyük bir sayı gir");
+			}
+			else if(sayipc < sayik)
+			{
+				System.out.println("Daha küçük bir sayı gir");
+			}
+		}
+	}
+
+}
