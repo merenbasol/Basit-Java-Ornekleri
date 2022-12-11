@@ -1,0 +1,37 @@
+3 - 2. Derecenden Denklemler
+
+import java.util.Scanner;
+
+public class DenklemClass
+{
+	
+	public static void main(String[] args) 
+	{		
+		// ax^2 + bx + c 
+		// delta = b^2 - 4ac eğer delta 0 dan büyükse 2 farklı köke sahip denklem eğer eşitse iki tane aynı köke eğer 0 dan küçükse reel bir kökü yoktur
+		// x1 = (-b + kökdelta)/2a x2 =(-b - kökdelta)/2a
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Lütfen ax^2 +  bx + c formatındaki denkleminizin a ,b ve c değerlerini sırayla giriniz");
+		double a = input.nextDouble();
+		double b = input.nextDouble();
+		double c = input.nextDouble();
+		
+		double delta = b*b - 4*a*c ;
+		
+		if (delta >= 0) 
+		{
+			double kokdelta = Math.sqrt(delta);
+			double x1 = (-b + kokdelta)/2*a;
+			double x2 = (-b - kokdelta)/2*a;
+			
+			System.out.println("Denkleminizin kökleri : " + x1 + " " + x2);
+		}
+		else 
+		{
+			System.out.println("Bu denklemin reel bir kökü bulunmamaktadır");
+		}
+	}
+
+}
