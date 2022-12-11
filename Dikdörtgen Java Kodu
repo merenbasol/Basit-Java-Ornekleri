@@ -1,0 +1,27 @@
+1 - Dikdörtgen
+
+import java.util.Scanner;
+
+public class Dikdörtgen_alan 
+{
+
+	public static void main(String[] args)
+	{
+		
+		Scanner giris = new Scanner(System.in);
+		
+		System.out.println("Lütfen a kenarını giriniz : ");
+		double a = giris.nextDouble();
+		
+		System.out.println("Lütfen b kenarını giriniz : ");
+		double b = giris.nextDouble();
+		
+		double cevre = 2*a + 2*b;
+		double alan = a*b ;
+		
+		System.out.println("Dİkdörtgeninizin cevresi : " + cevre);
+		System.out.println("Dİkdörtgeninizin alanı : " + alan);
+		
+	}
+
+}
