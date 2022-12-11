@@ -1,0 +1,43 @@
+4- Basit Bir Hesap Makinesi
+
+import java.util.Scanner;
+
+public class HesapClass 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Toplama içini 0 ı , çıkarma için 1 i, çarpma için 2 yi , bölme için 3 ü giriniz.");
+		
+		int karar = input.nextInt();
+		
+		System.out.println("İşlem yapmak istediğiniz iki sayıyı sırasıyla giriniz ");
+		
+		double x = input.nextDouble();
+		double y = input.nextDouble();
+		
+		double sonuc = 0 ;
+		
+		if (karar == 0) 
+		{
+			sonuc = x+y;
+		}
+		else if (karar == 1) 
+		{
+			sonuc = x-y;
+		}
+		else if (karar == 2) 
+		{
+			sonuc = x*y;
+		}
+		else if (karar == 3) 
+		{
+			sonuc = x/y;
+		}
+		
+		System.out.println(" İşlemnizin sonucu : " + sonuc);
+	}
+
+}
