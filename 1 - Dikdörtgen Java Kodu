@@ -19,8 +19,8 @@ public class Dikdörtgen_alan
 		double cevre = 2*a + 2*b;
 		double alan = a*b ;
 		
-		System.out.println("Dİkdörtgeninizin cevresi : " + cevre);
-		System.out.println("Dİkdörtgeninizin alanı : " + alan);
+		System.out.println("Dikdörtgeninizin cevresi : " + cevre);
+		System.out.println("Dikdörtgeninizin alanı : " + alan);
 		
 	}
 
