@@ -53,9 +53,9 @@ public class UcgenClass
 			System.out.println("Üçgeninizin çevresi : " + cevre + " üçgeninizin alanı : " + alan);
 		}
 		else
-    {
-    System.out.println("Girdiğiniz değerlere sahip bir üçgen olamaz");
-    }
+    		{
+    		System.out.println("Girdiğiniz değerlere sahip bir üçgen olamaz");
+    		}
 	}
 
 }
