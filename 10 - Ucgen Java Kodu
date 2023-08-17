@@ -54,7 +54,7 @@ public class UcgenClass
 		}
 		else
     		{
-    		System.out.println("Girdiğiniz değerlere sahip bir üçgen olamaz");
+    			System.out.println("Girdiğiniz değerlere sahip bir üçgen olamaz");
     		}
 	}
 
